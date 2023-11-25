@@ -263,7 +263,10 @@ function Header(props, ref) {
                                     <List component="div">
                                         {settings.map((setting, index) => (
                                             <ListItem key={userMenuListId + index} disablePadding>
-                                                <ListItemButton sx={{padding: "8px 1.75rem"}}>
+                                                <ListItemButton onClick={() => {
+                                                    handleCloseNavMenu()
+                                                    handleCollapseMenu()
+                                                    }} sx={{padding: "8px 1.75rem"}}>
                                                     <ListItemText primary={setting} />
                                                 </ListItemButton>
                                             </ListItem>
