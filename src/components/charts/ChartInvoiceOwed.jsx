@@ -55,7 +55,7 @@ function ChartInvoiceOwed({
     .data(chartData)
     .enter()
     .append("path").attr('class', 'path')
-    .style("fill", "rgba(71, 183, 71, 1)")
+    .style("fill", "cornflowerblue")
     .attr("d", item => `
         M${x(item.name)},${y(item.value) + ry}
         a${rx},${ry} 0 0 1 ${rx},${-ry}

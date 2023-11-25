@@ -22,7 +22,7 @@ export const theme = createTheme({
       selected: "rgba(71, 183, 71, 1)",
     },
     notificationBadgeColor:{
-      main: "rgba(71, 183, 71, 1)",
+      main: "cornflowerblue",
     },
   },
   
@@ -32,11 +32,11 @@ export const theme = createTheme({
         outlined: {
           borderColor: "transparent",
           backgroundColor: "rgba(219, 239, 249, 1)",
-          color: "#76BD80",
+          color: "cornflowerblue",
           fontWeight: "700",
 
           ":hover": {
-            borderColor: "#76BD80",
+            borderColor: "cornflowerblue",
             backgroundColor: "rgba(219, 239, 249, 1)",
           }
         }

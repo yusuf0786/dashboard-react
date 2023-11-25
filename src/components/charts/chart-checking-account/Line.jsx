@@ -21,7 +21,7 @@ export function Line({xScale, yScale, data, lineGenerator}) {
       .append('path')
       .data(data)
       .attr('id', 'line')
-      .attr('stroke', 'green')
+      .attr('stroke', 'cornflowerblue')
       .attr('stroke-width', 3)
       .attr('fill', 'none')
       .attr('d', lineGenerator);

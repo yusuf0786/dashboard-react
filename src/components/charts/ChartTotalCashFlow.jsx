@@ -22,7 +22,7 @@ function ChartTotalCashFlow({
     const svg = d3.select(".total-cash-flow-card-body svg")
     const graphArea = svg
 
-    const color = d3.scaleOrdinal().domain(keys).range(["rgba(71, 183, 71, 1)", "rgba(2, 187, 125, 1)"])
+    const color = d3.scaleOrdinal().domain(keys).range(["orange", "cornflowerblue"])
 
     const stackedData = d3.stack().keys(keys)(chartData)
 
@@ -111,11 +111,11 @@ function ChartTotalCashFlow({
             <Typography variant="h6" component="h3" fontWeight={700}>Total cash flow</Typography>
             <Box className="card-interaction" display="flex">
                 <Box display="flex" alignItems="center" marginRight="0.5rem">
-                    <Box className="total-cash-interaction-color" sx={{backgroundColor: "rgba(2, 187, 125, 1)"}}></Box>
+                    <Box className="total-cash-interaction-color" sx={{backgroundColor: "cornflowerblue"}}></Box>
                     <Typography variant="body1">In </Typography>
                 </Box>
                 <Box display="flex" alignItems="center">
-                    <Box className="total-cash-interaction-color" sx={{backgroundColor: "rgba(71, 183, 71, 1)"}}></Box>
+                    <Box className="total-cash-interaction-color" sx={{backgroundColor: "orange"}}></Box>
                     <Typography variant="body1">Out </Typography>
                 </Box>
             </Box>
