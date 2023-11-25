@@ -1,0 +1,30 @@
+.card-container {
+    .MuiPaper-root {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.card-body {
+    svg {
+        width: 100%;
+        height: 14.9rem;
+
+        @media only screen and (max-width:900px) {
+            height: 100%;
+        }
+    }
+}
+
+.card-body.cheking-account-card-body {
+    svg {
+        height: 100%;
+    }
+}
+
+.total-cash-interaction-color {
+    border-radius: 8px;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
